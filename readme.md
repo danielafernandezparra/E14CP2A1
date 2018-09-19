@@ -35,7 +35,7 @@
 - Generar la ruta para la creación de un empleado asociado a una empresa.
 
     - Para ello modificar la ruta resources de companies que ahora recibirá un bloque y dentro crearemos la ruta que apuntará al método create de employees.
-    
+
     ~~~ruby
     resources :employees, only: [:create]
     ~~~
@@ -59,7 +59,7 @@
     - Donde **@employee** debe ser declarado en el método correspondiente como una nueva instancia de **Employee**.
 
     - El formulario debe tener campos para *first_name*, *last_name*, *email*, *area*.
-    
+
     	> Recordar que el campo area debe ser un select.
 
 - En la vista *show*, bajo el formulario, se deben listar todos los empleados correspondientes a esa empresa en una tabla con los campos *first_name*, *last_name*, *email* y *area*.
@@ -76,7 +76,7 @@
 
      - Agregar el botón con el *method: :delete* a cada registro de empleados en la tabla.
 
-- En la vista *Index* de *companies*: 
+- En la vista *Index* de *companies*:
     - Los registros deben estar listados en una tabla (bootstrap) que contenga el nombre de la empresa y la cantidad de empleados que existe por área (**count**).
 
     - Al hacer click en el nombre de la empresa debe redireccionar a la vista *show* de esa empresa.
