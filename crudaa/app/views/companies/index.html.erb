@@ -15,7 +15,7 @@
 
       <table class="table">
         <td><%= link_to company.name , company_path(company.id) %></td>
-        <td>Empleados: <%= @companies.count %></td>
+        <td>Empleados: <%= company.employees.count %></td>
         <td><%= link_to 'Show', company, class:"btn btn-info"%></td>
         <td><%= link_to 'Edit', edit_company_path(company), class:"btn btn-warning" %></td>
         <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>

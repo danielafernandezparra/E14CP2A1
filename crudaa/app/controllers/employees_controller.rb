@@ -1,4 +1,8 @@
 class EmployeesController < ApplicationController
+  def Index
+    @employees = Employees.all
+  end
+
   def create
     @company = Company.find(params[:company_id])
     @employee = Employee.new(employee_params)
